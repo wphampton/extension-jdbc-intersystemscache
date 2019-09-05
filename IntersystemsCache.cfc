@@ -15,15 +15,15 @@ component extends="types.Driver" implements="types.IDatasource" {
   /**
   * returns display name of the driver
   */
-  public string function getName()  output="no" {
+  public string function getName() output="no" {
     return "{label}";
   }
 
   /**
   * returns description for the driver
   */
-  public string function getDescription()   output="no" {
-    return "{description}";
+  public string function getDescription() output="no" {
+    return {description};
   }
 
   /**
@@ -36,14 +36,14 @@ component extends="types.Driver" implements="types.IDatasource" {
   /**
   * returns Username
   */
-  public string function getUsername()   output="no" {
+  public string function getUsername() output="no" {
     return "{data.username}";
   }
 
   /**
   * returns Password
   */
-  public string function getPassword()   output="no" {
+  public string function getPassword() output="no" {
     return "{data.password}";
   }
 }
